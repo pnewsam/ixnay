@@ -1,0 +1,22 @@
+table {
+  border: solid 1px var(--grey-mid);
+  border-radius: 0.25rem;
+}
+
+th {
+  border-bottom: solid 1px var(--grey-mid);
+}
+
+th {
+  font-family: var(--font-body);
+  padding: 0.75rem;
+}
+
+td {
+  font-family: var(--font-body);
+  padding: 0.75rem;
+}
+
+td:not(:last-child) {
+  border-right: solid 1px var(--grey-light);
+}
