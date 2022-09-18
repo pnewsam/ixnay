@@ -1,0 +1,73 @@
+:root {
+  --h-margin: 1.25rem;
+  --h-color: var(--grey-90);
+  --h-font: var(--display);
+}
+
+h1 {
+  color: var(--h-color);
+  font-family: var(--h-font);
+  margin: var(--h-margin) 0;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0.0075em;
+}
+
+h2 {
+  color: var(--h-color);
+  font-family: var(--h-font);
+  margin: var(--h-margin) 0;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+h3 {
+  color: var(--h-color);
+  font-family: var(--h-font);
+  margin: var(--h-margin) 0;
+
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+/* article > :is(h1, h2, h3):first-of-type { */
+/* Article Header */
+/* If a title is the first in an <article>, it is a top level heading. */
+/* } */
+
+h4 {
+  color: var(--h-color);
+  font-family: var(--h-font);
+  margin: var(--h-margin) 0;
+
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+h5 {
+  color: var(--h-color);
+  font-family: var(--h-font);
+  margin: var(--h-margin) 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h1 + h4,
+h2 + h4,
+h3 + h4,
+h1 + h5,
+h2 + h5,
+h3 + h5 {
+  /* Remove margin if a title has a subtitle */
+  margin-top: calc(var(--h-margin) * -1);
+}

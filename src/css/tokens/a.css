@@ -1,0 +1,14 @@
+a {
+  color: var(--primary);
+  font-family: var(--body);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--primary-active);
+}
