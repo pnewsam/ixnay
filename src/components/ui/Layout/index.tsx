@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   background-color: var(--white);
   grid-area: content;
-  padding: 40px;
+  padding: 1rem 2rem;
 `;
 
 type Props = {

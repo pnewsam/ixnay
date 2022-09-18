@@ -1,0 +1,43 @@
+nav.sidenav {
+  background-color: var(--grey-90);
+  display: flex;
+  flex-direction: column;
+  grid-area: sidenav;
+  height: 100vh;
+  left: 0;
+  padding: var(--base);
+  box-sizing: border-box;
+  position: fixed;
+  width: 200px;
+}
+
+nav.sidenav ul {
+  padding: 0;
+}
+
+nav.sidenav li {
+  list-style-type: none;
+}
+
+nav.sidenav li[role="group"] > span {
+  letter-spacing: 0.2rem;
+  color: var(--white);
+  display: block;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 12px 12px 4px;
+  text-transform: uppercase;
+}
+
+nav.sidenav li:not([role="group"]) > * {
+  color: var(--white);
+  cursor: pointer;
+  display: block;
+  border-radius: var(--one-quarter);
+  padding: 12px;
+}
+
+nav.sidenav li:not([role="group"]) > *:hover {
+  background-color: var(--grey-70);
+  transition: var(--transition);
+}

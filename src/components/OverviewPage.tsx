@@ -1,10 +1,43 @@
-import { Article } from "../ui/Article";
-import { Section } from "../ui/Section";
-
-export const HomePage = () => (
-  <Article>
+export const OverviewPage = () => (
+  <article>
     <h1>Ixnay</h1>
-    <Section>
+    <hr />
+    <p>
+      Ixnay is a set of sensible CSS defaults for quickly bootstrapping
+      frontends. It aspires to being what the&nbsp;
+      <em>default browser style declarations that should have been</em>. Or
+      rather, what they should be in 2022. In practice, this means:
+    </p>
+    <ul>
+      <li>
+        The majority of Ixnay's style declarations are made{" "}
+        <em>directly on html element tags</em>.
+      </li>
+      <li>
+        It's <em>opt-out</em>. Don't worry about specificity -- just apply a
+        class of <code>xn</code> to opt out of Ixnay's styles.
+      </li>
+    </ul>
+    <p>
+      What this means is that if you are writing good semantic HTML, your markup
+      will look good out of the box, with no thought whatsoever directed towards
+      styling.
+    </p>
+
+    <h2>Principles</h2>
+    <ul>
+      <li>
+        <em>
+          If there's a thing on the page, it should correspond to an element in
+          the markup
+        </em>
+        . Conversely, if there <em>isn't</em> a thing on the page, there should
+        be no element in the markup. In other words, no
+        <code>div</code> labyrinths.
+      </li>
+    </ul>
+
+    <section>
       <h2>Layout</h2>
       <table>
         <tr>
@@ -188,6 +221,6 @@ export const HomePage = () => (
           <td>No</td>
         </tr>
       </table>
-    </Section>
-  </Article>
+    </section>
+  </article>
 );

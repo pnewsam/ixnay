@@ -1,0 +1,11 @@
+article li {
+  font-family: var(--body);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.0125rem;
+  line-height: 28px;
+  margin: 0;
+}
+article li + li {
+  margin-top: 0.125rem;
+}
