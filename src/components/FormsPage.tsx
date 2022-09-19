@@ -1,22 +1,49 @@
+import { SnippetCard } from "./ui/SnippetCard";
+
 export const FormsPage = () => {
   return (
     <article>
       <h1 id="form">Forms</h1>
 
-      <section>
-        <h2 id="button">Input</h2>
+      <SnippetCard
+        title="Input"
+        Code={
+          <>
+            &lt;input type="text" /&gt;
+            <br />
+            &lt;input type="text" disabled /&gt;
+            <br />
+            &lt;input type="text" className="lg" /&gt;
+          </>
+        }
+      >
         <input type="text" />
         <br />
+        <input type="text" disabled />
         <br />
-      </section>
+        <input className="lg" type="text" />
+      </SnippetCard>
 
-      <section>
-        <h2 id="select">Select</h2>
-        <select name="" id="">
-          <option value="">Hey</option>
-          <option value="">Next</option>
+      <SnippetCard title="Select" Code={<></>}>
+        <select name="Name of Select" id="">
+          <optgroup>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+          </optgroup>
+          <optgroup>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
+          </optgroup>
         </select>
-      </section>
+      </SnippetCard>
+
+      <SnippetCard title="Checkbox" Code={<></>}>
+        <input type="checkbox" name="" id="" />
+      </SnippetCard>
+
+      <SnippetCard title="Radio" Code={<></>}>
+        <input type="radio" name="" id="" />
+      </SnippetCard>
     </article>
   );
 };
