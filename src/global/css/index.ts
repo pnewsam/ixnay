@@ -5,4 +5,3 @@ import "./input.css";
 import "./select.css";
 import "./table.css";
 import "./typography.css";
-import "./layout.css";

@@ -5,60 +5,88 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /* ==================== FONTS ==================== */
-  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", "Ubuntu", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", "Ubuntu", sans-serif;
+
+  --body: var(--font-body);
+  --display: var(--font-display);
 
   /* ==================== COLORS ==================== */
   /* ================================================ */
-
-  /* ================== BASE COLORS ================= */
   --white: #fff;
-  --black: #212121;
-  --color-primary: rgb(8, 78, 207);
-  --color-secondary: rgb(246, 222, 0);
-  /* =============== DERIVED COLORS ================ */
-  --grey-10: rgba(33, 33, 33, 0.1);
-  --grey-20: rgba(33, 33, 33, 0.2);
-  --grey-30: rgba(33, 33, 33, 0.3);
-  --grey-40: rgba(33, 33, 33, 0.4);
-  --grey-50: rgba(33, 33, 33, 0.5);
-  --grey-60: rgba(33, 33, 33, 0.6);
-  --grey-70: rgba(33, 33, 33, 0.7);
-  --grey-80: rgba(33, 33, 33, 0.8);
-  --grey-90: rgba(33, 33, 33, 0.9);
+  --black: #000;
+
+  --grey-10: #f8f9fa;
+  --grey-20: #e9ecef;
+  --grey-30: #dee2e6;
+  --grey-40: #ced4da;
+  --grey-50: #adb5bd;
+  --grey-60: #6c757d;
+  --grey-70: #495057;
+  --grey-80: #343a40;
+  --grey-90: #212529;
   --grey-dark: var(--grey-70);
   --grey-mid: var(--grey-30);
   --grey-light: var(--grey-10);
-  
-  --yellow: #ffc93d;
-  --dYellow: #e0a308;
-  --green: #03AB00;
-  --dGreen: #089206;
-  
+
+  --primary-10: #ebefff;
+  --primary-20: #b9c4ff;
+  --primary-30: #8fa0ff;
+  --primary-40: #6e82fe;
+  --primary-50: #556aeb;
+  --primary-60: #354acb;
+  --primary-70: #1d2f99;
+  --primary-80: #0c1a66;
+  --primary-90: #020a33;
+  --primary: var(--primary-50);
+  --primary-hover: var(--primary-70);
+  --primary-active: var(--primary-80);
+  --primary-disabled: var(--primary-20);
+
+  --secondary-10: #fff8eb;
+  --secondary-20: #ffe3b0;
+  --secondary-30: #ffcc75;
+  --secondary-40: #ffb23b;
+  --secondary-50: #ff9500;
+  --secondary-60: #cc7c00;
+  --secondary-70: #996000;
+  --secondary-80: #664200;
+  --secondary-90: #332200;
+  --secondary: var(--secondary-50);
+  --secondary-hover: var(--secondary-70);
+  --secondary-active: var(--secondary-80);
+  --secondary-disabled: var(--secondary-20);
+
   /* ==================== EFFECTS ==================== */
   /* ================================================= */
-  --gradient: linear-gradient(180deg, #262626 0%, #131313 100%);
-  --shadow: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --tReg: ease-in-out .05s; /* transition regular */
 
+  --shadow-1: 0px 4px 6px rgba(33, 37, 41, 0.2),
+    0px 0px 1px rgba(33, 37, 41, 0.32);
+  --shadow-2: 0px 2px 2px rgba(33, 37, 41, 0.06),
+    0px 0px 1px rgba(33, 37, 41, 0.08);
+  --radius-1: 20px;
+  --radius-2: 8px;
+  --transition: ease-in-out 0.05s; /* transition regular */
 
   /* ==================== LAYOUT ===================== */
   /* ================================================= */
   --z-nav: 10;
 
-  
   /* ===================== SIZES ===================== */
   /* ================================================= */
-  --one-half: 8px;
-  --three-quarters: 12px;
-  --seven-eighths: 14px;
-  --base: 1rem;
-  --plus-quarter: 20px;
-  --plus-half: 24px;
-  --times-two: 32px;
-  --times-three: 48px;
-  --times-four: 64px;
+  --one-quarter: 0.25rem; /* 4px */
+  --one-half: 0.5rem; /* 8px */
+  --three-quarters: 0.75rem; /* 12px */
+  --seven-eighths: 0.875rem; /* 14px */
+  --base: 1rem; /* 1rem */
+  --plus-quarter: 1.25rem; /* 20px */
+  --plus-half: 1.5rem; /* 24px */
+  --times-two: 2rem; /* 32px */
+  --times-three: 3rem; /* 48px */
+  --times-four: 4rem; /* 64px */
+
   /* ================== Font Sizes ================= */
   --font-sm: var(--three-quarters);
   --font-md: var(--base);
@@ -74,9 +102,23 @@
 
 html {
   font-size: 16px;
+  font-family: var(--body);
+}
+
+body {
+  margin: 0;
 }
 
 * + * {
   box-sizing: border-box;
 }
 
+*[disabled] {
+  cursor: not-allowed;
+}
+
+hr {
+  border-top: solid 1px var(--grey-20);
+  border-bottom: none;
+  margin: 2rem 0;
+}

@@ -6,7 +6,7 @@ label {
 
 input {
   align-items: center;
-  border: 1px solid var(--grey-light);
+  border: 1px solid var(--grey-20);
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;

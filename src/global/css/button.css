@@ -1,15 +1,30 @@
 button {
   border: none;
-  background-color: var(--color-primary);
+  background-color: var(--primary);
   color: var(--white);
   cursor: pointer;
   border-radius: var(--one-half);
+  box-shadow: var(--shadow-2);
   font-size: var(--base);
   letter-spacing: 0.05rem;
   padding: var(--one-half) var(--base);
-  transition: var(--tReg);
+  transition: var(--transition);
 }
 
+button:hover {
+  background-color: var(--primary-hover);
+}
+button:active {
+  background-color: var(--primary-active);
+}
+button:disabled {
+  background-color: var(--primary-disabled);
+}
+
+button.secondary,
 button[data-variant="secondary"] {
-  background-color: var(--color-secondary);
+  background-color: var(--white);
+  border: solid 1px var(--grey-20);
+  color: var(--black);
+  box-shadow: var(--shadow-2);
 }

@@ -1,19 +1,13 @@
 import styled from "styled-components";
-import { SideNav } from "../SideNav";
+import { TopNav } from "../TopNav";
 
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-areas: "sidenav content";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-`;
+const Wrapper = styled.div``;
 
 const Content = styled.div`
   background-color: var(--white);
-  grid-area: content;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 40px;
 `;
 
@@ -24,7 +18,7 @@ type Props = {
 export const Layout = ({ children }: Props) => {
   return (
     <Wrapper>
-      <SideNav />
+      <TopNav />
       <Content>{children}</Content>
     </Wrapper>
   );
