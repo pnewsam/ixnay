@@ -1,8 +1,13 @@
+import styled from "styled-components";
 import { Link } from "react-router-dom";
+
+const Nav = styled.nav`
+  background-color: var(--white);
+`;
 
 export const SideNav = () => {
   return (
-    <nav className="sidenav">
+    <Nav className="sidenav">
       <ul>
         <li role="group">
           <span>Overview</span>
@@ -62,6 +67,6 @@ export const SideNav = () => {
           </ul>
         </li>
       </ul>
-    </nav>
+    </Nav>
   );
 };

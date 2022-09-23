@@ -1,17 +1,15 @@
 export const OverviewPage = () => (
   <article>
     <h1>Ixnay</h1>
-    <hr />
     <p>
       Ixnay is a set of sensible CSS defaults for quickly bootstrapping
-      frontends. It aspires to being what the&nbsp;
-      <em>default browser style declarations that should have been</em>. Or
-      rather, what they should be in 2022. In practice, this means:
+      frontends. It aspires to being the&nbsp;
+      <em>default browser style declarations for today's design paradigms</em>.
     </p>
     <ul>
       <li>
         The majority of Ixnay's style declarations are made{" "}
-        <em>directly on html element tags</em>.
+        <em>directly on HTML element tags</em>.
       </li>
       <li>
         It's <em>opt-out</em>. Don't worry about specificity -- just apply a
@@ -19,13 +17,15 @@ export const OverviewPage = () => (
       </li>
     </ul>
     <p>
-      What this means is that if you are writing good semantic HTML, your markup
-      will look good out of the box, with no thought whatsoever directed towards
-      styling.
+      In one sentence, Ixnay's goal is to&nbsp;
+      <em>minimize markup</em>.
     </p>
 
     <h2>Principles</h2>
     <ul>
+      <li>
+        <em>Minimize markup</em>.
+      </li>
       <li>
         <em>
           If there's a thing on the page, it should correspond to an element in
@@ -33,7 +33,22 @@ export const OverviewPage = () => (
         </em>
         . Conversely, if there <em>isn't</em> a thing on the page, there should
         be no element in the markup. In other words, no
-        <code>div</code> labyrinths.
+        <code>div</code> labyrinths. Div labyrinths were largely a consequence
+        of the lack of good layout solutions in earlier CSS versions. But now
+        with Flexbox and Grid, it is often possible to do without extraneous
+        elements.
+      </li>
+      <li>
+        <em>Minimize cognitive overhead.</em> The less code, the better. There
+        is a fundamental tradeoff between
+      </li>
+    </ul>
+
+    <h2>What Ixnay is NOT</h2>
+    <ul>
+      <li>
+        <em>Scalable</em>. It is not designed to scale. It is designed to be
+        ripped out, as your design system evolves organically.
       </li>
     </ul>
 

@@ -12,9 +12,9 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  background-color: var(--white);
+  background-color: var(--grey-10);
   grid-area: content;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 8rem;
 `;
 
 type Props = {
