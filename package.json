@@ -1,12 +1,13 @@
 {
-  "name": "vinyl_fairy-frontend",
+  "name": "ixnay",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-css": "vite build -c css.config.ts"
   },
   "dependencies": {
     "bulma": "^0.9.4",

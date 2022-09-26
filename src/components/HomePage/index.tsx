@@ -100,6 +100,18 @@ export const HomePage = () => (
           <br />
           <br />
           <u>Underlined</u>
+          <br />
+          <br />
+          <mark>Highlighted</mark>
+          <br />
+          <br />
+          <blockquote>
+            All of old. Nothing else ever. Ever tried. Ever failed. No matter.
+            Try again. Fail again. Fail better.
+          </blockquote>
+          <p>
+            <cite>Worstward Ho</cite> by Samuel Beckett.
+          </p>
         </div>
         <div>
           <code className="block">
@@ -132,7 +144,9 @@ export const HomePage = () => (
         <div className="nix">
           <button>Primary</button>
           <br />
+          <br />
           <button className="secondary">Secondary</button>
+          <br />
           <br />
           <button disabled>Disabled</button>
         </div>
@@ -141,7 +155,56 @@ export const HomePage = () => (
             &lt;button&gt;Primary Button&lt;/button&gt;
             <br />
             &lt;button className="secondary"&gt;Secondary Button&lt;/button&gt;
+            <br />
+            &lt;button disabled&gt;Disabled&lt;/button&gt;
           </code>
+        </div>
+      </SplitPane>
+    </Section>
+    <hr />
+
+    <Section>
+      <h2>Interactable</h2>
+      <SplitPane>
+        <div className="nix">
+          <button
+            onClick={() => {
+              const el = document.getElementById("dialog");
+              el?.getAttribute("open") === "true"
+                ? el.removeAttribute("open")
+                : el?.setAttribute("open", "true");
+            }}
+          >
+            Toggle Dialog
+          </button>
+          <dialog id="dialog">
+            <header>
+              <h4>Modal heading</h4>
+            </header>
+            <section>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, nam odit illum voluptatibus cumque aspernatur commodi
+                distinctio aliquam excepturi corporis qui ut, labore, dolore
+                velit aperiam nihil doloremque quaerat consequatur?
+              </p>
+            </section>
+            <footer>
+              <button
+                onClick={() => {
+                  const el = document.getElementById("dialog");
+                  el?.getAttribute("open") === "true"
+                    ? el.removeAttribute("open")
+                    : el?.setAttribute("open", "true");
+                }}
+              >
+                Close
+              </button>
+            </footer>
+          </dialog>
+        </div>
+        <div>
+          <code className="block"></code>
         </div>
       </SplitPane>
     </Section>
@@ -159,12 +222,37 @@ export const HomePage = () => (
           <input type="checkbox" name="" id="" />
           <label htmlFor="">Check this box?</label>
           <br />
-          <label htmlFor="option-1">Option 1</label>
-          <input type="radio" name="radio" id="option-1" />
-          <label htmlFor="option-2">Option 2</label>
-          <input type="radio" name="radio" id="option-2" />
-          <label htmlFor="option-3">Option 3</label>
-          <input type="radio" name="radio" id="option-3" />
+
+          <fieldset>
+            <legend>Checkbox options</legend>
+            <input type="radio" name="radio" id="option-1" />
+            <label htmlFor="option-1">Option 1</label>
+            <input type="radio" name="radio" id="option-2" />
+            <label htmlFor="option-2">Option 2</label>
+            <input type="radio" name="radio" id="option-3" />
+            <label htmlFor="option-3">Option 3</label>
+          </fieldset>
+
+          <select name="my-options" id="">
+            <optgroup>
+              Group
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </optgroup>
+            <option value="3">Option 3</option>
+          </select>
+
+          <label htmlFor="browser">Choose your browser from the list:</label>
+          <input list="browsers" name="browser" id="browser" />
+
+          <datalist id="browsers">
+            <option value="Edge" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
+
           <button type="submit">Submit</button>
         </form>
         <div>
@@ -183,7 +271,30 @@ export const HomePage = () => (
             <li>List item 2</li>
             <li>List item 3</li>
           </ul>
+
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ol>
+
+          <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+          </dl>
+
+          <details>
+            <summary>Epcot Center</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
         </div>
+
         <div>
           <code className="block"></code>
         </div>
@@ -197,6 +308,18 @@ export const HomePage = () => (
         <div>
           If you want some inline code, it will look like <code>this</code>.
           <code className="block">This is a block of code</code>
+          <br />
+          <br />
+          <var>Var element</var>
+          <br />
+          <br />
+          <samp>Sample element</samp>
+          <br />
+          <br />
+          <kbd>Keyboard input element</kbd>
+          <br />
+          <br />
+          <pre>Pre element</pre>
         </div>
         <div>
           <code className="block">This is a block of code</code>
@@ -210,6 +333,7 @@ export const HomePage = () => (
       <SplitPane>
         <div>
           <table>
+            <caption>My Table Caption</caption>
             <thead>
               <tr>
                 <th>One</th>
