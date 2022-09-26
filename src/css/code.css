@@ -1,0 +1,24 @@
+code,
+var,
+samp,
+kbd {
+  background-color: var(--grey-10);
+  border: solid 1px var(--grey-20);
+  display: inline;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  line-height: 1.5rem;
+  margin: 0 0.25rem;
+}
+
+var {
+  font-family: monospace;
+  font-style: normal;
+}
+
+code.block {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
