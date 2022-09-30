@@ -1,0 +1,14 @@
+fieldset {
+  border: solid 1px var(--grey-20);
+  /* border-radius: var(--radius-2); */
+  padding: 1rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+fieldset legend {
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  top: -2rem;
+}

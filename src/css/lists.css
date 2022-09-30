@@ -1,0 +1,47 @@
+ul {
+  padding-left: 1.25rem;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: 1.5rem;
+}
+
+dl {
+}
+
+dt {
+  font-weight: bolder;
+  padding: 0.5rem 0;
+}
+
+dd {
+  font-family: var(--font-body);
+  border-left: solid 1px var(--grey-20);
+  letter-spacing: 0.0125rem;
+  line-height: 1.5rem;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+details {
+}
+
+summary {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+details > *:not(summary) {
+  border-left: solid 1px var(--grey-20);
+  letter-spacing: 0.0125rem;
+  line-height: 1.5rem;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
