@@ -2,7 +2,7 @@ dialog {
   border: none;
   background-color: var(--white);
   border-radius: var(--radius-2);
-  box-shadow: var(--shadow-1);
+  padding: 0;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -17,4 +17,32 @@ dialog {
 
 dialog[open] {
   box-shadow: 0 0 1080px 1080px rgba(60, 60, 60, 0.5), var(--shadow-1);
+}
+
+dialog header {
+  border-bottom: solid 1px var(--grey-20);
+  padding: 24px;
+}
+
+dialog header hgroup,
+dialog header h1,
+dialog header h2,
+dialog header h3,
+dialog header h4,
+dialog header h5,
+dialog header h6 {
+  margin: 0;
+}
+
+dialog footer {
+  border-top: solid 1px var(--grey-20);
+  position: absolute;
+  bottom: 0;
+  padding: 24px;
+  left: 0;
+  width: 100%;
+}
+
+dialog section {
+  padding: 24px;
 }

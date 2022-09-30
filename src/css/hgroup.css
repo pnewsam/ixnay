@@ -1,0 +1,21 @@
+hgroup > h1,
+hgroup > h2,
+hgroup > h3,
+hgroup > h4,
+hgroup > h5,
+hgroup > h6 {
+  margin-bottom: 0;
+}
+
+hgroup > h1 + p,
+hgroup > h2 + p,
+hgroup > h3 + p,
+hgroup > h4 + p,
+hgroup > h5 + p,
+hgroup > h6 + p {
+  margin-top: 0.5rem;
+}
+
+hgroup {
+  margin: 1rem 0;
+}

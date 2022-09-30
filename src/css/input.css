@@ -1,9 +1,3 @@
-label {
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
 input {
   align-items: center;
   border: 1px solid var(--grey-20);
@@ -20,11 +14,6 @@ input {
   padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top;
-}
-
-label + input[type="text"] {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 input[type="radio"],
