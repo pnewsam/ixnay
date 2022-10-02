@@ -20,7 +20,7 @@ dialog[open] {
 }
 
 dialog header {
-  border-bottom: solid 1px var(--grey-20);
+  border-bottom: var(--border-light);
   padding: 24px;
 }
 
@@ -35,7 +35,7 @@ dialog header h6 {
 }
 
 dialog footer {
-  border-top: solid 1px var(--grey-20);
+  border-top: var(--border-light);
   position: absolute;
   bottom: 0;
   padding: 24px;

@@ -1,4 +1,5 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Interactable = () => {
   const toggleDialog = () => {
@@ -9,7 +10,12 @@ export const Interactable = () => {
   };
   return (
     <Section>
-      <h2>Interactable</h2>
+      <hgroup>
+        <h2>Interactable</h2>
+        <p>
+          <code>dialog</code>
+        </p>
+      </hgroup>
       <SplitPane>
         <div>
           <button onClick={toggleDialog}>Toggle Dialog</button>

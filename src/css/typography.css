@@ -50,6 +50,10 @@ span {
   font-family: var(--font-body);
 }
 
+em {
+  font-weight: bolder;
+}
+
 address {
 }
 

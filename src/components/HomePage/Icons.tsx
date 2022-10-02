@@ -1,4 +1,5 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Icons = () => (
   <Section>
