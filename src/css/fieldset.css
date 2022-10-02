@@ -1,7 +1,6 @@
 fieldset {
-  border: solid 1px var(--grey-20);
-  /* border-radius: var(--radius-2); */
-  padding: 1rem;
+  border: none;
+  padding: 0;
   margin-top: 3rem;
   position: relative;
 }
@@ -10,5 +9,24 @@ fieldset legend {
   font-weight: bolder;
   position: absolute;
   left: 0;
-  top: -2rem;
+  top: -1.75rem;
+}
+
+/* fieldset:has(input[type='checkbox']) { */
+fieldset {
+  align-items: center;
+  display: grid;
+  grid-auto-rows: min-content;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  grid-template-columns: 24px 1fr;
+}
+
+fieldset input[type="radio"] {
+  cursor: pointer;
+}
+
+fieldset label {
+  cursor: pointer;
+  font-weight: normal;
 }

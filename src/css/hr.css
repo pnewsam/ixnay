@@ -1,0 +1,6 @@
+hr {
+  border-top: var(--border-light);
+  border-bottom: none;
+  margin: 2rem 0;
+  width: var(--full-width);
+}

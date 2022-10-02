@@ -1,23 +1,34 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Forms = () => (
   <Section>
-    <h2>Forms</h2>
+    <hgroup>
+      <h2>Forms</h2>{" "}
+      <p>
+        <code>form</code>, <code>label</code>, <code>input</code>,{" "}
+        <code>select</code>, <code>optgroup</code>, <code>option</code>, and{" "}
+        <code>datalist</code>.
+      </p>
+    </hgroup>
     <SplitPane>
       <form action="">
-        <label htmlFor="">First Name</label>
+        <label htmlFor="">Irstfay Name</label>
         <input type="text" />
-        <label htmlFor="">Last Name</label>
+        <label htmlFor="">Astlay Name</label>
         <input type="text" />
         <br />
         <input type="checkbox" name="" id="" />
-        <label htmlFor="">Check this box?</label>
-        <br />
+        <label htmlFor="">Ubscribesay otay ethay ewsletternay.</label>
+        <p>If you check this box, we'll send you marketing updates on the.</p>
 
         <fieldset>
           <legend>Checkbox options</legend>
           <input type="radio" name="radio" id="option-1" />
-          <label htmlFor="option-1">Option 1</label>
+          <label htmlFor="option-1">
+            <span>Option 1</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </label>
           <input type="radio" name="radio" id="option-2" />
           <label htmlFor="option-2">Option 2</label>
           <input type="radio" name="radio" id="option-3" />

@@ -1,25 +1,36 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Buttons = () => (
   <Section>
-    <h2>Buttons</h2>
+    <hgroup>
+      <h2>Buttons</h2>
+      <p>
+        <code>button</code>
+      </p>
+    </hgroup>
     <SplitPane>
       <div className="nix">
-        <button>Primary</button>
+        <button>Order sandwich</button>
+        <button disabled>Order sandwich</button>
         <br />
         <br />
-        <button className="secondary">Secondary</button>
-        <br />
-        <br />
-        <button disabled>Disabled</button>
+        <button className="secondary">Cancel order</button>
+        <button disabled className="secondary">
+          Cancel order
+        </button>
       </div>
       <div>
         <code className="block">
-          &lt;button&gt;Primary Button&lt;/button&gt;
+          &lt;button&gt;Order sandwich&lt;/button&gt;
           <br />
-          &lt;button className="secondary"&gt;Secondary Button&lt;/button&gt;
+          &lt;button disabled&gt;Order sandwich&lt;/button&gt;
           <br />
-          &lt;button disabled&gt;Disabled&lt;/button&gt;
+          &lt;button className="secondary"&gt;Cancel order&lt;/button&gt;
+          <br />
+          &lt;button disabled className="secondary"&gt;Cancel
+          order&lt;/button&gt;
+          <br />
         </code>
       </div>
     </SplitPane>

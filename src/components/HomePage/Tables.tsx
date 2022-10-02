@@ -1,8 +1,16 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Tables = () => (
   <Section>
-    <h2>Tables</h2>
+    <hgroup>
+      <h2>Tables</h2>
+      <p>
+        <code>table</code>, <code>caption</code>, <code>thead</code>,{" "}
+        <code>tbody</code>, <code>tfoot</code>, <code>tr</code>, <code>th</code>
+        , and <code>td</code>.
+      </p>
+    </hgroup>
     <SplitPane>
       <div>
         <table>

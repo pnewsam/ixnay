@@ -1,95 +1,76 @@
-import { Section, SplitPane } from "./index.styled";
+import { Section } from "../ui/Section";
+import { SplitPane } from "../ui/SplitPane";
 
 export const Typography = () => (
   <Section>
-    <h2>Typography</h2>
-    <SplitPane>
-      <div>
-        <p>The typeface is the standard fontstack</p>
-      </div>
-      <div>
-        <code className="block">
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Helvetica Neue", "Ubuntu", sans-serif;
-        </code>
-      </div>
-    </SplitPane>
-
-    <br />
-    <SplitPane>
-      <div>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h5>Heading 6</h5>
-
-        <hgroup>
-          <h1>My heading</h1>
-          <p>My subheading</p>
-        </hgroup>
-      </div>
-
-      <div>
-        <code className="block">
-          &lt;h1&gt;Heading 1&lt;/h1&gt;
-          <br />
-          &lt;h2&gt;Heading 2&lt;/h2&gt;
-          <br />
-          &lt;h3&gt;Heading 3&lt;/h3&gt;
-          <br />
-          &lt;h4&gt;Heading 4&lt;/h4&gt;
-          <br />
-          &lt;h5&gt;Heading 5&lt;/h5&gt;
-          <br />
-          &lt;h5&gt;Heading 6&lt;/h5&gt;
-          <br />
-          &lt;group&gt;
-          <br />
-          &lt;h1&gt;My heading&lt;/h1&gt;
-          <br />
-          &lt;h1&gt;My subheading&lt;/h1&gt;
-          <br />
-          &lt;/hgroup&gt;
-        </code>
-      </div>
-    </SplitPane>
+    <hgroup>
+      <h2>Typography</h2>
+      <p>
+        <code>p</code>, <code>span</code>, <code>b</code>, <code>em</code>,{" "}
+        <code>i</code>, <code>u</code>, <code>s</code>, <code>mark</code>,{" "}
+        <code>blockquote</code>, and <code>cite</code>.
+      </p>
+    </hgroup>
 
     <SplitPane>
       <div>
-        <p>The base type is 16px over 1.6 line height (24px)</p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis at
-          accusamus laborum, quis eveniet doloribus incidunt iure omnis nam
-          mollitia et optio similique velit tempore itaque sit in illo cum!
+          A <b>sandwich</b> is a food typically consisting of vegetables, sliced
+          cheese or meat, placed on or between slices of bread, or more
+          generally any dish wherein bread serves as a container or wrapper for
+          another food type. The sandwich began as a portable, convenient finger
+          food in the Western world, though over time it has become
+          prevalent&nbsp;
+          <u>worldwide</u>.
         </p>
-        <br />
 
-        <strong>Bolded</strong>
-        <br />
-        <br />
-        <em>Emphasized</em>
-        <br />
-        <br />
-        <i>Italicized</i>
-        <br />
-        <br />
-        <a href="/">Link</a>
-        <br />
-        <br />
-        <u>Underlined</u>
-        <br />
-        <br />
-        <mark>Highlighted</mark>
-        <br />
+        <p>
+          In the 21st century there has been considerable debate over the
+          precise definition of sandwich; and specifically whether a hot dog or
+          open sandwich can be categorized as such. In the United States,
+          the&nbsp;
+          <i>Department of Agriculture</i> and the{" "}
+          <i>Food and Drug Administration</i>&nbsp;are the responsible agencies.
+          The USDA uses the definition,{" "}
+          <mark>"at least 35% cooked meat and no more than 50% bread"</mark> for
+          closed sandwiches, and "at least 50% cooked meat" for open sandwiches.
+          In Britain, the British Sandwich Association defines a sandwich as
+          "any form of bread with a filling, generally assembled cold", a
+          definition which includes wraps and bagels, but{" "}
+          <em>excludes dishes assembled and served hot</em>, such as{" "}
+          <s>burgers</s>.
+        </p>
+
         <br />
         <blockquote>
-          All of old. Nothing else ever. Ever tried. Ever failed. No matter. Try
-          again. Fail again. Fail better.
+          ...any form of bread with a filling, generally assembled cold
         </blockquote>
+        <br />
+        <cite>
+          Code of Practice and Minimum Standards for Sandwich Manufacturers -
+          British Sandwich Association.
+        </cite>
+        <br />
+        <br />
+
         <p>
-          <cite>Worstward Ho</cite> by Samuel Beckett.
+          Sandwiches are a popular type of lunch food, taken to work, school, or
+          picnics to be eaten as part of a packed lunch. The bread may be plain
+          or be coated with condiments, such as mayonnaise or mustard, to
+          enhance its flavour and texture. As well as being homemade, sandwiches
+          are also widely sold in various retail outlets and can be served hot
+          or cold. There are both savoury sandwiches, such as deli meat
+          sandwiches, and sweet sandwiches, such as a peanut butter and jelly
+          sandwich.
+        </p>
+
+        <p>
+          The sandwich is named after its supposed inventor,&nbsp;
+          <a href="https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich">
+            John Montagu, 4th Earl of Sandwich
+          </a>
+          . The Wall Street Journal has described it as Britain's "biggest
+          contribution to gastronomy".
         </p>
       </div>
       <div>
@@ -100,10 +81,6 @@ export const Typography = () => (
           Nobis at accusamus laborum, quis eveniet doloribus incidunt iure omnis
           nam mollitia et optio similique velit tempore itaque sit in illo cum!
           &lt;/p&gt;
-          <br />
-          &lt;strong&gt;Bolded&lt;/strong&gt;
-          <br />
-          &lt;em&gt;Emphasized&lt;/em&gt;
           <br />
           &lt;i&gt;Italicized&lt;/i&gt;
           <br />

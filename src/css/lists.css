@@ -1,8 +1,15 @@
 ul {
+  margin: 0;
   padding-left: 1.25rem;
 }
 
 ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+menu {
+  margin: 0;
   padding-left: 1.5rem;
 }
 
@@ -14,6 +21,7 @@ li {
 }
 
 dl {
+  margin: 0;
 }
 
 dt {
@@ -23,23 +31,7 @@ dt {
 
 dd {
   font-family: var(--font-body);
-  border-left: solid 1px var(--grey-20);
-  letter-spacing: 0.0125rem;
-  line-height: 1.5rem;
-  margin-left: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-details {
-}
-
-summary {
-  cursor: pointer;
-  margin-bottom: 0.5rem;
-}
-
-details > *:not(summary) {
-  border-left: solid 1px var(--grey-20);
+  border-left: var(--border-light);
   letter-spacing: 0.0125rem;
   line-height: 1.5rem;
   margin-left: 0.5rem;
