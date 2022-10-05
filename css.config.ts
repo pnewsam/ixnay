@@ -7,5 +7,10 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/css/index.ts"),
       name: "ixnay",
     },
+    rollupOptions: {
+      output: {
+        assetFileNames: "ixnay.min.[ext]",
+      },
+    },
   },
 });
