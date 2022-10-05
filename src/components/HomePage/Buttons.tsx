@@ -11,14 +11,16 @@ export const Buttons = () => (
     </hgroup>
     <SplitPane>
       <div className="nix">
-        <button>Order sandwich</button>
-        <button disabled>Order sandwich</button>
-        <br />
-        <br />
-        <button className="secondary">Cancel order</button>
-        <button disabled className="secondary">
-          Cancel order
-        </button>
+        <div style={{ display: "flex", gap: "16px" }}>
+          <button>Order sandwich</button>
+          <button disabled>Order sandwich</button>
+        </div>
+        <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
+          <button className="secondary">Cancel order</button>
+          <button disabled className="secondary">
+            Cancel order
+          </button>
+        </div>
       </div>
       <div>
         <code className="block">
@@ -26,12 +28,23 @@ export const Buttons = () => (
           <br />
           &lt;button disabled&gt;Order sandwich&lt;/button&gt;
           <br />
-          &lt;button className="secondary"&gt;Cancel order&lt;/button&gt;
           <br />
-          &lt;button disabled className="secondary"&gt;Cancel
+          &lt;button <mark>class="secondary"</mark>&gt;Cancel
+          order&lt;/button&gt;
+          <br />
+          &lt;button disabled <mark>class="secondary"</mark>&gt;Cancel
           order&lt;/button&gt;
           <br />
         </code>
+      </div>
+      <div>
+        {/* prettier-ignore */}
+        <pre>
+{`{
+  'hello': 'asdf',
+
+}`}
+        </pre>
       </div>
     </SplitPane>
   </Section>

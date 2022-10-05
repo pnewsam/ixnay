@@ -14,31 +14,79 @@ export const Tables = () => (
     <SplitPane>
       <div>
         <table>
-          <caption>My Table Caption</caption>
+          <caption>Types of Sandwiches</caption>
           <thead>
             <tr>
-              <th>One</th>
-              <th>Two</th>
-              <th>Three</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Good or Bad</th>
+              <th>Reasoning</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>One</td>
-              <td>Two</td>
-              <td>Three</td>
+              <td>Sloppy Joe</td>
+              <td>
+                A sloppy joe is a sandwich consisting of ground beef, onions,
+                tomato sauce or ketchup, Worcestershire sauce, and other
+                seasonings, served on a hamburger bun. The dish originated in
+                Havana, Cuba and was brought to the United States during the
+                early 20th century.
+              </td>
+              <td>Good</td>
+              <td>It's a sandwich</td>
+            </tr>
+            <tr>
+              <td>Peanut butter jelly</td>
+              <td>
+                A peanut butter and jelly sandwich (PB&J) consists of peanut
+                butter and fruit preserves—jelly—spread on bread. The sandwich
+                may be open-faced, made of a single slice of bread folded over,
+                or made using two slices of bread.
+              </td>
+              <td>Good</td>
+              <td>Also a sandwich</td>
+            </tr>
+            <tr>
+              <td>Croque-monsieur sandwich</td>
+              <td>
+                A croque monsieur is a hot sandwich made with ham and cheese.
+                The dish originated in French cafés and bars as a quick snack.
+                The name comes from the French words croque and monsieur.
+              </td>
+              <td>Good</td>
+              <td>Sandwiches are good</td>
+            </tr>
+            <tr>
+              <td>Reuben</td>
+              <td>
+                The Reuben sandwich is a North American grilled sandwich
+                composed of corned beef, Swiss cheese, sauerkraut, and Thousand
+                Island dressing or Russian dressing, grilled between slices of
+                rye bread. It is associated with kosher-style delicatessens, but
+                is not kosher because it combines meat and cheese.
+              </td>
+              <td>Good</td>
+              <td>Is it a sandwich? So, yup</td>
             </tr>
           </tbody>
           <tfoot>
-            <tr>
-              <td>One</td>
-              <td>Two</td>
-              <td>Three</td>
-            </tr>
+            {/* <tr>
+              <td>Croque-monsieur sandwich</td>
+              <td>
+                A croque monsieur is a hot sandwich made with ham and cheese.
+                The dish originated in French cafés and bars as a quick snack.
+                The name comes from the French words croque and monsieur.
+              </td>
+              <td>Good</td>
+              <td>Sandwiches are good</td>
+            </tr> */}
           </tfoot>
         </table>
       </div>
-      <div></div>
+      <div>
+        <code className="block"></code>
+      </div>
     </SplitPane>
   </Section>
 );

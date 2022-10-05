@@ -34,8 +34,20 @@ export const Interactable = () => {
                 velit aperiam nihil doloremque quaerat consequatur?
               </p>
             </section>
-            <footer>
-              <button onClick={toggleDialog}>Close</button>
+            <footer
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <button className="secondary" onClick={toggleDialog}>
+                Close
+              </button>
+              <button
+                onClick={() => {
+                  alert("Submitted!");
+                  toggleDialog();
+                }}
+              >
+                Submit
+              </button>
             </footer>
           </dialog>
         </div>

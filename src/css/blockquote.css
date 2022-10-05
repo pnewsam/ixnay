@@ -1,9 +1,8 @@
 blockquote {
   background-color: var(--bg-light);
-  display: block;
   border-left: solid 2px var(--grey-30);
   font-style: italic;
   padding: 0.5rem 0 0.5rem 1rem;
   line-height: 1.5rem;
-  margin: 0;
+  margin-left: 0;
 }
