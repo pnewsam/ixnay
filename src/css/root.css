@@ -76,7 +76,7 @@
   /* ================================================= */
   --content-padding: 40px;
   --content-max-width: 1280px;
-  --full-width: min(
+  --content-full-width: min(
     calc(100vw - (var(--content-padding) * 2)),
     var(--content-max-width)
   );

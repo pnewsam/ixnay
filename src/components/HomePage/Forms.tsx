@@ -13,46 +13,53 @@ export const Forms = () => (
     </hgroup>
     <SplitPane>
       <form action="">
-        <label htmlFor="">Irstfay Name</label>
-        <input type="text" />
-        <label htmlFor="">Astlay Name</label>
-        <input type="text" />
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" />
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" />
         <br />
-        <input type="checkbox" name="" id="" />
-        <label htmlFor="">Ubscribesay otay ethay ewsletternay.</label>
-        <p>If you check this box, we'll send you marketing updates on the.</p>
+        <label htmlFor="subscribe">
+          <input type="checkbox" name="subscribe" id="subscribe" />
+          <span>
+            Do you like sandwiches? If you check this box we'll send you weekly
+            sandwich content.
+          </span>
+        </label>
 
         <fieldset>
-          <legend>Checkbox options</legend>
-          <input type="radio" name="radio" id="option-1" />
+          <legend>Traditional Sandwiches</legend>
+
           <label htmlFor="option-1">
-            <span>Option 1</span>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <input type="radio" name="radio" id="roast-beef-sandwich" />
+            <span>Roast beef sandwich</span>
           </label>
-          <input type="radio" name="radio" id="option-2" />
-          <label htmlFor="option-2">Option 2</label>
-          <input type="radio" name="radio" id="option-3" />
-          <label htmlFor="option-3">Option 3</label>
+          <label htmlFor="option-2">
+            <input type="radio" name="radio" id="fried-chicken-sandwich" />
+            <span>Fried chicken sandwich</span>
+          </label>
+          <label htmlFor="option-3">
+            <input type="radio" name="radio" id="blt" />
+            BLT
+          </label>
         </fieldset>
         <br />
 
-        <label htmlFor="sandwiches">Sandwiches</label>
+        <label htmlFor="sandwiches">Alternative Sandwiches</label>
         <select name="my-options" id="sandwiches">
-          <optgroup label="Group">
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
+          <option value="bagel-lox">Bagel with lox</option>
+          <optgroup label="Wraps">
+            <option value="schwarma">Schwarma</option>
+            <option value="hummus-wrap">Hummus wrap</option>
           </optgroup>
-          <option value="3">Option 3</option>
+          <optgroup label="Open-face">
+            <option value="avocado-toast">Avocado toast</option>
+          </optgroup>
         </select>
-        <br />
-        <br />
 
-        <label htmlFor="browser">Choose your browser from the list:</label>
-        <input list="browsers" name="browser" id="browser" />
-        <br />
-        <br />
+        <label htmlFor="more-sandwiches">More sandwiches:</label>
+        <input list="browsers" name="browser" id="more-sandwiches" />
 
-        <label htmlFor="soft-drink-choice">Soft drinks</label>
+        <label htmlFor="soft-drink-choice">Additional sandwiches</label>
         <input
           list="soft-drinks"
           id="soft-drink-choice"
@@ -65,6 +72,7 @@ export const Forms = () => (
           <option value="Dr. Pepper" />
         </datalist>
 
+        <br />
         <button type="submit">Submit</button>
       </form>
       <div>

@@ -18,7 +18,7 @@ export const Headings = () => (
         <h3>Available here</h3>
         <h4>Made fresh to order</h4>
         <h5>You won't regret stopping by</h5>
-        <h6>Come see the Sandwich Emperor</h6>
+        <h6>Come see the Sandwich Renegade</h6>
       </div>
       <div>
         <code className="block">
@@ -32,7 +32,7 @@ export const Headings = () => (
           <br />
           &lt;h5&gt;You won't regret stopping by&lt;/h5&gt;
           <br />
-          &lt;h6&gt;Come see the Sandwich Emperor&lt;/h6&gt;
+          &lt;h6&gt;Come see the Sandwich Renegade&lt;/h6&gt;
           <br />
         </code>
       </div>
@@ -41,7 +41,7 @@ export const Headings = () => (
     <SplitPane>
       <div>
         <hgroup>
-          <h1>Sandwich Emperor</h1>
+          <h1>Sandwich Renegade</h1>
           <p>The best sandwiches this side of the 77th meridian.</p>
         </hgroup>
       </div>

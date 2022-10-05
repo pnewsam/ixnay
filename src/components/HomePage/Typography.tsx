@@ -8,23 +8,49 @@ export const Typography = () => (
       <p>
         <code>p</code>, <code>span</code>, <code>b</code>, <code>em</code>,{" "}
         <code>i</code>, <code>u</code>, <code>s</code>, <code>mark</code>,{" "}
-        <code>blockquote</code>, and <code>cite</code>.
+        <code>q</code>,<code>blockquote</code>, and <code>cite</code>,{" "}
+        <code>abbr</code>, <code>address</code>.
       </p>
     </hgroup>
 
     <SplitPane>
       <div>
         <p>
-          A <b>sandwich</b> is a food typically consisting of vegetables, sliced
-          cheese or meat, placed on or between slices of bread, or more
-          generally any dish wherein bread serves as a container or wrapper for
-          another food type. The sandwich began as a portable, convenient finger
-          food in the Western world, though over time it has become
-          prevalent&nbsp;
-          <u>worldwide</u>.
+          A sandwich is a food typically consisting of vegetables, sliced cheese
+          or meat, placed on or between slices of bread, or more generally any
+          dish wherein bread serves as a container or wrapper for another food
+          type. The sandwich began as a portable, convenient finger food in the
+          Western world, though over time it has become prevalent worldwide.
         </p>
-
         <p>
+          This sandwich is <b>bolded</b>.
+        </p>
+        <p>
+          This sandwich is <strong>strong</strong>.
+        </p>
+        <p>
+          This sandwich is <em>emphasized</em>.
+        </p>
+        <p>
+          This sandwich is <i>italicized</i>.
+        </p>
+        <p>
+          This sandwich is <u>underlined</u>.
+        </p>
+        <p>
+          This sandwich is <mark>highlighted</mark>.
+        </p>
+        <p>
+          This sandwich is <s>struck through</s>.
+        </p>
+        <p>
+          This sandwich is <sup>superscripted</sup>
+        </p>
+        <p>
+          This sandwich is <sub>subscripted</sub>.
+        </p>
+        .
+        {/* <p>
           In the 21st century there has been considerable debate over the
           precise definition of sandwich; and specifically whether a hot dog or
           open sandwich can be categorized as such. In the United States,
@@ -39,31 +65,14 @@ export const Typography = () => (
           definition which includes wraps and bagels, but{" "}
           <em>excludes dishes assembled and served hot</em>, such as{" "}
           <s>burgers</s>.
-        </p>
-
-        <br />
+        </p> */}
         <blockquote>
           ...any form of bread with a filling, generally assembled cold
         </blockquote>
-        <br />
         <cite>
           Code of Practice and Minimum Standards for Sandwich Manufacturers -
           British Sandwich Association.
         </cite>
-        <br />
-        <br />
-
-        <p>
-          Sandwiches are a popular type of lunch food, taken to work, school, or
-          picnics to be eaten as part of a packed lunch. The bread may be plain
-          or be coated with condiments, such as mayonnaise or mustard, to
-          enhance its flavour and texture. As well as being homemade, sandwiches
-          are also widely sold in various retail outlets and can be served hot
-          or cold. There are both savoury sandwiches, such as deli meat
-          sandwiches, and sweet sandwiches, such as a peanut butter and jelly
-          sandwich.
-        </p>
-
         <p>
           The sandwich is named after its supposed inventor,&nbsp;
           <a href="https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich">

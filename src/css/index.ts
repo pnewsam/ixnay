@@ -7,8 +7,6 @@ import "./details.css";
 import "./fieldset.css";
 import "./hgroup.css";
 import "./input.css";
-import "./input[checkbox].css";
-import "./input[radio].css";
 import "./dialog.css";
 import "./hr.css";
 import "./label.css";

@@ -29,7 +29,8 @@ export const Code = () => (
           <br />
           &lt;/p&gt;
           <br />
-          &lt;code className="block"&gt;This is a block of code&lt;/code&gt;
+          &lt;code <mark>className="block"</mark>&gt;This is a block of
+          code&lt;/code&gt;
         </code>
       </div>
     </SplitPane>
