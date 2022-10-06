@@ -29,9 +29,7 @@ export const Tables = () => (
               <td>
                 A sloppy joe is a sandwich consisting of ground beef, onions,
                 tomato sauce or ketchup, Worcestershire sauce, and other
-                seasonings, served on a hamburger bun. The dish originated in
-                Havana, Cuba and was brought to the United States during the
-                early 20th century.
+                seasonings, served on a hamburger bun.
               </td>
               <td>Good</td>
               <td>It's a sandwich</td>
@@ -40,9 +38,7 @@ export const Tables = () => (
               <td>Peanut butter jelly</td>
               <td>
                 A peanut butter and jelly sandwich (PB&J) consists of peanut
-                butter and fruit preserves—jelly—spread on bread. The sandwich
-                may be open-faced, made of a single slice of bread folded over,
-                or made using two slices of bread.
+                butter and fruit preserves—jelly—spread on bread.
               </td>
               <td>Good</td>
               <td>Also a sandwich</td>
@@ -51,8 +47,6 @@ export const Tables = () => (
               <td>Croque-monsieur sandwich</td>
               <td>
                 A croque monsieur is a hot sandwich made with ham and cheese.
-                The dish originated in French cafés and bars as a quick snack.
-                The name comes from the French words croque and monsieur.
               </td>
               <td>Good</td>
               <td>Sandwiches are good</td>
@@ -63,8 +57,7 @@ export const Tables = () => (
                 The Reuben sandwich is a North American grilled sandwich
                 composed of corned beef, Swiss cheese, sauerkraut, and Thousand
                 Island dressing or Russian dressing, grilled between slices of
-                rye bread. It is associated with kosher-style delicatessens, but
-                is not kosher because it combines meat and cheese.
+                rye bread.
               </td>
               <td>Good</td>
               <td>Is it a sandwich? So, yup</td>

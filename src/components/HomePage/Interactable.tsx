@@ -8,6 +8,7 @@ export const Interactable = () => {
       ? el.removeAttribute("open")
       : el?.setAttribute("open", "true");
   };
+
   return (
     <Section>
       <hgroup>
@@ -16,44 +17,81 @@ export const Interactable = () => {
           <code>dialog</code>
         </p>
       </hgroup>
-      <SplitPane>
-        <div>
-          <button onClick={toggleDialog}>Toggle Dialog</button>
-          <dialog id="dialog">
-            <header>
-              <hgroup>
-                <h2>Modal heading</h2>
-                <p>Description</p>
-              </hgroup>
-            </header>
-            <section>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis, nam odit illum voluptatibus cumque aspernatur commodi
-                distinctio aliquam excepturi corporis qui ut, labore, dolore
-                velit aperiam nihil doloremque quaerat consequatur?
-              </p>
-            </section>
-            <footer
-              style={{ display: "flex", justifyContent: "space-between" }}
+      <SplitPane
+        code={
+          <>
+            &lt;dialog id="dialog"&gt;
+            <br />
+            &nbsp;&nbsp;&lt;header&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Modal
+            heading&lt;/h2&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Description&lt;/p&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/hgroup&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/header&gt;
+            <br />
+            &nbsp;&nbsp;&lt;section&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis, nam odit illum voluptatibus
+            cumque aspernatur commodi distinctio aliquam excepturi corporis qui
+            ut, labore, dolore velit aperiam nihil doloremque quaerat
+            consequatur?
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/section&gt;
+            <br />
+            &nbsp;&nbsp;&lt;footer&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="secondary"&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Submit
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/footer&gt;
+            <br />
+            &lt;/dialog&gt;
+            <br />
+          </>
+        }
+      >
+        <button onClick={toggleDialog}>Toggle Dialog</button>
+        <dialog id="dialog">
+          <header>
+            <h2>Proceed with sandwiches?</h2>
+          </header>
+          <section>
+            <p>If you proceed, you will be </p>
+          </section>
+          <footer style={{ display: "flex", justifyContent: "space-between" }}>
+            <button className="secondary" onClick={toggleDialog}>
+              Close
+            </button>
+            <button
+              onClick={() => {
+                alert("Submitted!");
+                toggleDialog();
+              }}
             >
-              <button className="secondary" onClick={toggleDialog}>
-                Close
-              </button>
-              <button
-                onClick={() => {
-                  alert("Submitted!");
-                  toggleDialog();
-                }}
-              >
-                Submit
-              </button>
-            </footer>
-          </dialog>
-        </div>
-        <div>
-          <code className="block"></code>
-        </div>
+              Submit
+            </button>
+          </footer>
+        </dialog>
       </SplitPane>
     </Section>
   );

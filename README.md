@@ -28,3 +28,26 @@ It is available for use via:
 ## Design Principles
 
 - 60-30-10 rule
+
+## Utilities
+
+- Columns
+
+## Components
+
+- Badge
+- DropdownMenu
+- Tooltip
+- Error
+- Tag
+- ix-Checkbox
+- ix-Combobox
+- ix-Select
+- Icons
+- Skeleton (for loading)
+- Spinner (for loading)
+- Snippet (copyable code)
+- Status Indicator (dot)
+- Toggle
+- Tabs
+- Toast

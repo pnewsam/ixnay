@@ -59,6 +59,8 @@
   --secondary-active: var(--secondary-80);
   --secondary-disabled: var(--secondary-20);
 
+  --color-code: #e0415e;
+
   /* ==================== EFFECTS ==================== */
   /* ================================================= */
 
@@ -115,7 +117,7 @@ body {
   margin: 0;
 }
 
-* + * {
+* {
   box-sizing: border-box;
 }
 
