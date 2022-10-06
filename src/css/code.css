@@ -1,18 +1,13 @@
 code {
   background-color: var(--bg-light);
   border: var(--border-light);
+  color: var(--color-code);
   display: inline;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   padding: 0.25rem;
   line-height: 1.5rem;
   margin: 0 0.25rem;
-}
-
-code.block {
-  display: block;
-  padding: 0.5rem 1rem;
-  margin: 0;
 }
 
 kbd {
@@ -47,9 +42,4 @@ pre {
   padding: 0.5rem 1rem;
   line-height: 1.5rem;
   margin: 0 0.25rem;
-}
-
-pre.block {
-  display: block;
-  margin: 0;
 }
