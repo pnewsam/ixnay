@@ -104,8 +104,10 @@
   --font-sm: var(--three-quarters);
   --font-md: var(--base);
   --font-lg: var(--plus-quarter);
-  --font-xl: var(--times-two);
-  --font-xxl: var(--times-three);
+  --font-xl: var(--plus-half);
+  --font-2xl: var(--times-two);
+  --font-3xl: var(--times-three);
+  --font-4xl: var(--times-four);
 }
 
 html {

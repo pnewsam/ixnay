@@ -3,24 +3,10 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Typography = () => (
   <Section>
-    <h2>Typography</h2>
+    <h3>Typography</h3>
 
     <SplitPane
-      els={[
-        "p",
-        "span",
-        "b",
-        "em",
-        "i",
-        "u",
-        "s",
-        "mark",
-        "q",
-        "blockquote",
-        "cite",
-        "abbr",
-        "address",
-      ]}
+      els={["p", "span", "b", "em", "i", "u", "s", "mark"]}
       code={
         <>
           &lt;p&gt;
@@ -62,17 +48,18 @@ export const Typography = () => (
         Western world, though over time it has become prevalent worldwide.
       </p>
       <p>
-        This sandwich is <strong>strong</strong>, or <em>emphasized</em>.
+        This sandwich is <strong>strong</strong>, or <em>emphasized</em>
       </p>
       <p>
-        This sandwich is <i>italicized</i>.
+        This sandwich is <i>italicized</i>
       </p>
       <p>
-        This sandwich is <u>underlined</u>.
+        This sandwich is <u>underlined</u>
       </p>
     </SplitPane>
 
     <SplitPane
+      els={["blockquote", "cite"]}
       code={
         <>
           &lt;blockquote&gt;
@@ -99,6 +86,73 @@ export const Typography = () => (
         Code of Practice and Minimum Standards for Sandwich Manufacturers -
         British Sandwich Association.
       </cite>
+    </SplitPane>
+
+    <SplitPane
+      els={["code", "var", "samp", "kbd", "pre", "time"]}
+      code={
+        <>
+          &lt;p&gt;
+          <br />
+          &nbsp;&nbsp;If you want some inline code, it will look like
+          &lt;code&gt;this&lt;/code&gt;
+          <br />
+          &lt;/p&gt;
+          <br />
+          &lt;var&gt;Var element&lt;/var&gt;
+          <br />
+          &lt;samp&gt;Sample element&lt;/samp&gt;
+          <br />
+          &lt;kbd&gt;⌘&lt;/kbd&gt;
+          <br />
+          &lt;kbd&gt;⇧&lt;/kbd&gt;
+          <br />
+          &lt;kbd&gt;⌥&lt;/kbd&gt;
+          <br />
+          &lt;kbd&gt;⌃&lt;/kbd&gt;
+          <br />
+          &lt;pre&gt;
+          <br />
+          {
+            <>
+              {`{`}
+              <br />
+              &nbsp;&nbsp;&nbsp;
+              {`"name": "John",`}
+              <br />
+              &nbsp;&nbsp;
+              {`  "age":30,`}
+              <br />
+              &nbsp;&nbsp;
+              {`  "car":null`}
+              <br />
+              {`}`}
+            </>
+          }
+          <br />
+          &lt;/pre&gt;
+        </>
+      }
+    >
+      <p>
+        If you want some inline code, it will look like <code>this</code>
+      </p>
+      <p>
+        This is a <var>var</var>
+      </p>
+      <p>
+        This is a <samp>samp</samp>
+      </p>
+      <p>
+        These are kbd: <kbd>⌘</kbd>, <kbd>⇧</kbd>, <kbd>⌥</kbd>, <kbd>⌃</kbd>
+      </p>
+      <pre>
+        {`{
+  "name": "John",
+  "age":30,
+  "car":null
+}`}
+      </pre>
     </SplitPane>
   </Section>
 );

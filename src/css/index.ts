@@ -1,5 +1,7 @@
 import "./root.css";
 
+import "./utilities/index.css";
+
 import "./button.css";
 import "./blockquote.css";
 import "./code.css";

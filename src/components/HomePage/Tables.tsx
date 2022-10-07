@@ -3,15 +3,24 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Tables = () => (
   <Section>
-    <hgroup>
-      <h2>Tables</h2>
-      <p>
-        <code>table</code>, <code>caption</code>, <code>thead</code>,{" "}
-        <code>tbody</code>, <code>tfoot</code>, <code>tr</code>, <code>th</code>
-        , and <code>td</code>.
-      </p>
-    </hgroup>
-    <SplitPane>
+    <h3>Tables</h3>
+
+    <SplitPane
+      els={["table", "caption", "thead", "tbody", "tfoot", "tr", "th", "td"]}
+      code={`
+<table> // table
+  <caption> // caption
+  <thead> // thead
+    <tr> // tr
+      <th> // th
+  <tbody> // tbody  
+    <tr> // tr
+      <td> // td
+  <tfoot> // tfoot
+    <tr> // tr
+
+      `}
+    >
       <div>
         <table>
           <caption>Types of Sandwiches</caption>
@@ -28,8 +37,7 @@ export const Tables = () => (
               <td>Sloppy Joe</td>
               <td>
                 A sloppy joe is a sandwich consisting of ground beef, onions,
-                tomato sauce or ketchup, Worcestershire sauce, and other
-                seasonings, served on a hamburger bun.
+                and other seasonings, served on a hamburger bun.
               </td>
               <td>Good</td>
               <td>It's a sandwich</td>
@@ -56,8 +64,7 @@ export const Tables = () => (
               <td>
                 The Reuben sandwich is a North American grilled sandwich
                 composed of corned beef, Swiss cheese, sauerkraut, and Thousand
-                Island dressing or Russian dressing, grilled between slices of
-                rye bread.
+                Island dressing grilled between slices of rye bread.
               </td>
               <td>Good</td>
               <td>Is it a sandwich? So, yup</td>

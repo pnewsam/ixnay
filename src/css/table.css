@@ -33,18 +33,6 @@ tbody tr {
   padding-left: 40px;
 }
 
-/* tbody tr td:first-child:before {
-  content: "✔️";
-  display: block;
-  position: absolute;
-  width: 2rem;
-  height: 100%;
-  left: -2rem;
-  top: -1px;
-  bottom: 1px;
-  border: solid 1px var(--grey-10);
-} */
-
 tbody tr:hover:nth-child(odd) {
   background-color: var(--grey-10);
 }

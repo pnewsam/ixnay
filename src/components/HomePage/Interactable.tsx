@@ -11,13 +11,9 @@ export const Interactable = () => {
 
   return (
     <Section>
-      <hgroup>
-        <h2>Interactable</h2>
-        <p>
-          <code>dialog</code>
-        </p>
-      </hgroup>
+      <h3>Interactable</h3>
       <SplitPane
+        els={["dialog"]}
         code={
           <>
             &lt;dialog id="dialog"&gt;
@@ -73,10 +69,13 @@ export const Interactable = () => {
         <button onClick={toggleDialog}>Toggle Dialog</button>
         <dialog id="dialog">
           <header>
-            <h2>Proceed with sandwiches?</h2>
+            <h2>Would you like to continue</h2>
           </header>
           <section>
-            <p>If you proceed, you will be </p>
+            <p>
+              If you proceed, you will be completing an action that may or may
+              not be desirable, depending on your needs.
+            </p>
           </section>
           <footer style={{ display: "flex", justifyContent: "space-between" }}>
             <button className="secondary" onClick={toggleDialog}>

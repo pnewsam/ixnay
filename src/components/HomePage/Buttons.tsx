@@ -3,7 +3,7 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Buttons = () => (
   <Section>
-    <h2>Buttons</h2>
+    <h3>Buttons</h3>
     <SplitPane
       els={["button"]}
       code={

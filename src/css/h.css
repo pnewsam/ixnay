@@ -1,25 +1,39 @@
 h1 {
-  font-size: var(--font-xxl);
+  font-size: var(--font-4xl);
   font-family: var(--font-display);
   margin: 1rem 0;
 }
 
 h2 {
-  font-size: var(--font-xl);
+  font-size: var(--font-3xl);
   font-family: var(--font-display);
   margin: 1rem 0;
 }
 
 h3 {
-  font-size: var(--font-lg);
+  font-size: var(--font-2xl);
   font-family: var(--font-display);
   margin: 1rem 0;
 }
 
-h4,
-h5,
-h6 {
-  font-size: var(--font-md);
+h4 {
+  font-size: var(--font-xl);
   font-family: var(--font-display);
   margin: 1rem 0;
+}
+
+h5,
+h6 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: var(--font-lg);
+}
+
+h6 {
+  font-size: var(--font-md);
 }
