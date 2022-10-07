@@ -9,6 +9,17 @@ const SFooter = styled.footer`
 
 export const Footer = () => {
   return (
+    <footer>
+      <div className="columns"></div>
+      <Content>
+        <SFooter>
+          <div>Footer</div>
+        </SFooter>
+      </Content>
+    </footer>
+  );
+
+  return (
     <SFooter>
       <Content>
         <p>Something</p>

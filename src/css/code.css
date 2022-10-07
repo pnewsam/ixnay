@@ -1,45 +1,14 @@
-code {
-  background-color: var(--bg-light);
-  border: var(--border-light);
-  color: var(--color-code);
-  display: inline;
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  padding: 0.25rem;
-  line-height: 1.5rem;
-  margin: 0 0.25rem;
-}
-
-kbd {
-  background-color: var(--bg-light);
-  border: var(--border-light);
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  margin: 0 0.25rem;
-  padding: 0.25rem 0.5rem;
-}
-
-samp {
-  background-color: var(--bg-light);
-  border: var(--border-light);
-  border-radius: 0.25rem;
-  padding: 0.25rem;
-}
-
-var {
-  background-color: var(--bg-light);
-  border: var(--border-light);
-  border-radius: 0.25rem;
-  font-family: monospace;
-  padding: 0.25rem;
-}
-
+code,
+kbd,
+samp,
+var,
 pre {
   background-color: var(--bg-light);
   border: var(--border-light);
+  color: var(--color-code);
   border-radius: 0.25rem;
   font-size: 0.875rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem;
   line-height: 1.5rem;
   margin: 0 0.25rem;
 }

@@ -17,6 +17,5 @@ fieldset input[type="radio"] {
 }
 
 fieldset label {
-  font-weight: normal;
   margin: 0.5rem 0;
 }

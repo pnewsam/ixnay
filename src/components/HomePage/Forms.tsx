@@ -3,7 +3,7 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Forms = () => (
   <Section>
-    <h2>Forms</h2>{" "}
+    <h3>Forms</h3>{" "}
     <SplitPane
       els={["input[type='text']"]}
       code={

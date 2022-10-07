@@ -1,6 +1,5 @@
 import { Typography } from "./Typography";
 import { Buttons } from "./Buttons";
-import { Code } from "./Code";
 import { Forms } from "./Forms";
 import { Headings } from "./Headings";
 import { Interactable } from "./Interactable";
@@ -18,8 +17,6 @@ export const HomePage = () => {
       <Typography />
 
       <Lists />
-
-      <Code />
 
       <Buttons />
 
