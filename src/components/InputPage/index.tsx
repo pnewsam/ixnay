@@ -1,9 +1,9 @@
 import { Section } from "../ui/Section";
 import { SplitPane } from "../ui/SplitPane";
 
-export const Forms = () => (
+export const InputPage = () => (
   <Section>
-    <h3>Forms</h3>{" "}
+    <h2>Input</h2>
     <SplitPane
       els={["input[type='text']"]}
       code={

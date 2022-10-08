@@ -7,19 +7,19 @@ export const Nav = styled.nav`
   flex-direction: column;
   grid-area: sidenav;
   height: 100vh;
-  left: 0;
   padding: var(--base);
-  box-sizing: border-box;
-  position: fixed;
-  width: 200px;
 `;
 
 export const SideNav = () => {
   return (
     <Nav>
-      <Link to="/">To Do</Link>
-      <Link to="/text">Text</Link>
-      <Link to="/form">Form</Link>
+      <Link to="/">Overview</Link>
+      <Link to="/typography">Typography</Link>
+      <Link to="/button">Button</Link>
+      <Link to="/dialog">Dialog</Link>
+      <Link to="/icon">Icon</Link>
+      <Link to="/input">Input</Link>
+      <Link to="/list">List</Link>
     </Nav>
   );
 };

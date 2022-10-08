@@ -3,7 +3,7 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Typography = () => (
   <Section>
-    <h3>Typography</h3>
+    <h2>Typography</h2>
 
     <SplitPane
       els={["p", "span", "b", "em", "i", "u", "s", "mark"]}

@@ -4,7 +4,7 @@ import { Content } from "../Content";
 const SFooter = styled.footer`
   background-color: var(--grey-10);
   min-height: 300px;
-  width: 100vw;
+  /* width: 100vw; */
 `;
 
 export const Footer = () => {

@@ -1,7 +1,7 @@
 import { Section } from "../ui/Section";
 import { SplitPane } from "../ui/SplitPane";
 
-export const Interactable = () => {
+export const DialogPage = () => {
   const toggleDialog = () => {
     const el = document.getElementById("dialog");
     el?.getAttribute("open") === "true"
@@ -11,7 +11,7 @@ export const Interactable = () => {
 
   return (
     <Section>
-      <h3>Interactable</h3>
+      <h2>Dialog</h2>
       <SplitPane
         els={["dialog"]}
         code={
