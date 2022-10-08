@@ -1,9 +1,9 @@
 import { Section } from "../ui/Section";
 import { SplitPane } from "../ui/SplitPane";
 
-export const Buttons = () => (
+export const ButtonPage = () => (
   <Section>
-    <h3>Buttons</h3>
+    <h2>Button</h2>
     <SplitPane
       els={["button"]}
       code={

@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   border: 1px solid var(--grey-20);
   border-radius: var(--radius-2);
+  display: grid;
   margin-bottom: 16px;
   width: 100%;
-  display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title" "rendered code";
@@ -39,7 +39,7 @@ const Code = styled.code<{ isCollapsed: boolean }>`
   margin: 0;
   overflow: hidden;
   padding: 0.5rem 1rem;
-  width: 100%;
+  /* width: 100%; */
   /* height: 0;
   transition: height 0.5s ease-out;
   ${({ isCollapsed }) =>

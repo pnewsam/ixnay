@@ -7,7 +7,7 @@ const PageTitle = styled.h1`
   text-align: center;
 `;
 
-export const Overview = () => {
+export const OverviewPage = () => {
   const { isV2 } = useEnv();
 
   return (
@@ -32,7 +32,6 @@ export const Overview = () => {
         &lt;link rel="stylesheet"
         href="https://d162l99amukxws.cloudfront.net/style.css" /&gt;
       </code>
-      <hr />
 
       {false && (
         <>

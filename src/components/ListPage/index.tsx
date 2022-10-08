@@ -1,9 +1,9 @@
 import { Section } from "../ui/Section";
 import { SplitPane } from "../ui/SplitPane";
 
-export const Lists = () => (
+export const ListPage = () => (
   <Section>
-    <h3>Lists</h3>
+    <h2>Lists</h2>
     <SplitPane
       els={["ul", "li"]}
       code={

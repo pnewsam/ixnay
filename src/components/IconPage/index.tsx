@@ -1,9 +1,10 @@
 import { Section } from "../ui/Section";
 import { SplitPane } from "../ui/SplitPane";
 
-export const Icons = () => (
+export const IconPage = () => (
   <Section>
-    <SplitPane>
+    <h2>Icon</h2>
+    <SplitPane code={<></>}>
       <div></div>
       <div></div>
     </SplitPane>

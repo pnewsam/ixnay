@@ -76,10 +76,12 @@
 
   /* ==================== UTILITIES ===================== */
   /* ================================================= */
+
+  --sidenav-width: 200px;
   --content-padding: 40px;
-  --content-max-width: 1280px;
+  --content-max-width: 1080px;
   --content-full-width: min(
-    calc(100vw - (var(--content-padding) * 2)),
+    calc(100vw - (var(--content-padding) * 2) - var(--sidenav-width)),
     var(--content-max-width)
   );
 
