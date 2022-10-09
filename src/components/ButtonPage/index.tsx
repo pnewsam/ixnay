@@ -33,6 +33,7 @@ export const ButtonPage = () => (
         </button>
       </div>
       <div>
+        {/* @ts-ignore */}
         <button-2 onClick={() => alert("hello")}>hey</button-2>
       </div>
     </SplitPane>
