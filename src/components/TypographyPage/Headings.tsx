@@ -3,8 +3,6 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const Headings = () => (
   <Section>
-    <h2>Headings</h2>
-
     <SplitPane
       els={["h1", "h2", "h3", "h4", "h5", "h6"]}
       code={
