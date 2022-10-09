@@ -1,8 +1,7 @@
 button,
-input[type="submit"] {
+input[type="submit"],
+button-2 {
   border: none;
-  background-color: var(--primary);
-  color: var(--white);
   cursor: pointer;
   border-radius: var(--one-half);
   box-shadow: var(--shadow-2);
@@ -10,6 +9,12 @@ input[type="submit"] {
   letter-spacing: 0.05rem;
   padding: var(--one-half) var(--base);
   transition: var(--transition);
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--white);
 }
 button:hover {
   background-color: var(--primary-hover);
@@ -21,21 +26,26 @@ button:disabled {
   background-color: var(--primary-disabled);
 }
 
-button.secondary {
+button-2 {
+  display: inline-block;
   background-color: var(--white);
   border: var(--border-light);
   color: var(--black);
   box-shadow: var(--shadow-2);
 }
-button.secondary:hover:not(:disabled) {
+button-2:hover:not(:disabled) {
   border-color: var(--primary);
   border-width: 1px;
   background-color: var(--primary-10);
 }
-button.secondary:active:not(:disabled) {
+button-2:active:not(:disabled) {
   border-color: var(--primary-active);
   background-color: var(--primary-20);
 }
-button.secondary:disabled {
+button-2:disabled {
   background-color: var(--grey-10);
 }
+/* 
+button-2 {
+  border: solid 1px red;
+} */

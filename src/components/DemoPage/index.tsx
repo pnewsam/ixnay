@@ -1,3 +1,5 @@
+import { Section } from "../ui/Section";
+
 export const DemoPage = () => {
   return (
     // <!DOCTYPE html>
@@ -26,7 +28,7 @@ export const DemoPage = () => {
 
     //   <body>
 
-    <>
+    <Section>
       <header>
         <h1>HTML</h1>
         <h2>Every html element in one place. Just waiting to be styled.</h2>
@@ -528,7 +530,7 @@ export const DemoPage = () => {
           <address>email@email.com</address>
         </footer>
       </section>
-    </>
+    </Section>
     // </body>
     // </html>
   );

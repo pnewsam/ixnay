@@ -9,6 +9,7 @@ import "./details.css";
 import "./fieldset.css";
 import "./h.css";
 import "./hgroup.css";
+import "./icons.css";
 import "./input.css";
 import "./dialog.css";
 import "./hr.css";

@@ -32,6 +32,9 @@ export const ButtonPage = () => (
           Cancel order
         </button>
       </div>
+      <div>
+        <button-2 onClick={() => alert("hello")}>hey</button-2>
+      </div>
     </SplitPane>
   </Section>
 );
