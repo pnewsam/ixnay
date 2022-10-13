@@ -34,7 +34,9 @@ export const ButtonPage = () => (
       </div>
       <div>
         {/* @ts-ignore */}
-        <button-2 onClick={() => alert("hello")}>hey</button-2>
+        {/* <button-2 onClick={() => alert("hello")}>hey</button-2> */}
+        {/* @ts-ignore */}
+        {/* <ix-navbar>what</ix-navbar> */}
       </div>
     </SplitPane>
   </Section>

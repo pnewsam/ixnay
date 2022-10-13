@@ -4,6 +4,9 @@ import { SplitPane } from "../ui/SplitPane";
 export const InputPage = () => (
   <Section>
     <h2>Input</h2>
+    <p>Text inputs for the.</p>
+    <hr />
+
     <SplitPane
       els={["input[type='text']"]}
       code={
