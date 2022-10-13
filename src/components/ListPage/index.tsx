@@ -3,7 +3,10 @@ import { SplitPane } from "../ui/SplitPane";
 
 export const ListPage = () => (
   <Section>
-    <h2>Lists</h2>
+    <h1>Lists</h1>
+    <p></p>
+    <hr />
+
     <SplitPane
       els={["ul", "li"]}
       code={

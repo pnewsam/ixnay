@@ -59,6 +59,11 @@
   --secondary-active: var(--secondary-80);
   --secondary-disabled: var(--secondary-20);
 
+  --warning: #e9de60;
+  --success: #00bfa5;
+  --info: #2061db;
+  --danger: #e0415e;
+
   --color-code: #e0415e;
 
   /* ==================== EFFECTS ==================== */
