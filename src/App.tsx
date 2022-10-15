@@ -1,12 +1,7 @@
 import { AppRoutes } from "./components/AppRoutes";
-import { EnvProvider } from "./contexts";
 
 function App() {
-  return (
-    <EnvProvider>
-      <AppRoutes />
-    </EnvProvider>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
