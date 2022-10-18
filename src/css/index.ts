@@ -2,6 +2,7 @@ import "./root.css";
 
 import "./utilities/index.css";
 
+import "./a.css";
 import "./button.css";
 import "./blockquote.css";
 import "./code.css";
@@ -15,6 +16,7 @@ import "./dialog.css";
 import "./hr.css";
 import "./label.css";
 import "./lists.css";
+import "./p.css";
 import "./select.css";
 import "./table.css";
 import "./typography.css";
