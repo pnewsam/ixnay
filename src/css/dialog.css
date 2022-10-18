@@ -24,16 +24,6 @@ dialog header {
   padding: 24px;
 }
 
-dialog header hgroup,
-dialog header h1,
-dialog header h2,
-dialog header h3,
-dialog header h4,
-dialog header h5,
-dialog header h6 {
-  margin: 0;
-}
-
 dialog footer {
   border-top: var(--border-light);
   position: absolute;

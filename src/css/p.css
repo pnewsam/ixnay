@@ -1,0 +1,6 @@
+p {
+  font-family: var(--font-body);
+  letter-spacing: 0.0125rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
