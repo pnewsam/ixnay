@@ -1,21 +1,25 @@
 h1 {
   font-size: var(--font-4xl);
   font-family: var(--font-display);
+  margin: 0;
 }
 
 h2 {
   font-size: var(--font-3xl);
   font-family: var(--font-display);
+  margin: 0;
 }
 
 h3 {
   font-size: var(--font-2xl);
   font-family: var(--font-display);
+  margin: 0;
 }
 
 h4 {
   font-size: var(--font-xl);
   font-family: var(--font-display);
+  margin: 0;
 }
 
 h5 {
@@ -23,6 +27,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: var(--font-lg);
+  margin: 0;
 }
 
 h6 {
@@ -30,4 +35,5 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: var(--font-md);
+  margin: 0;
 }
