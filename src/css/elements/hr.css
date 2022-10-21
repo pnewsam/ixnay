@@ -1,6 +1,5 @@
-hr {
+hr.ix {
   border-top: var(--border-light);
   border-bottom: none;
-  margin: 2rem 0;
-  width: var(--content-full-width);
+  margin: 1rem 0;
 }

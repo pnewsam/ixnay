@@ -1,8 +1,8 @@
-code,
-kbd,
-samp,
-var,
-pre {
+code.ix,
+kbd.ix,
+samp.ix,
+var.ix,
+pre.ix {
   background-color: var(--bg-light);
   border: var(--border-light);
   color: var(--color-code);

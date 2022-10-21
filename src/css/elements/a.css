@@ -1,9 +1,7 @@
-a {
+a.ix {
   color: var(--primary);
-  font-family: var(--font-body);
   text-decoration: none;
 }
-
-a:hover {
+a.ix:hover {
   text-decoration: underline;
 }
