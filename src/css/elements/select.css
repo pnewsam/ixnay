@@ -1,9 +1,9 @@
-select {
+select.ix {
   background-color: transparent;
   border: var(--border-light);
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
   margin: 0;
+  font-size: 1rem;
   padding: 0.5rem;
 }

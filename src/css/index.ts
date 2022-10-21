@@ -1,22 +1,13 @@
+import "./reset.css";
 import "./root.css";
 
-import "./utilities/index.css";
-
-import "./a.css";
-import "./button.css";
-import "./blockquote.css";
-import "./code.css";
-import "./details.css";
-import "./fieldset.css";
-import "./h.css";
-import "./hgroup.css";
-import "./icons.css";
-import "./input.css";
-import "./dialog.css";
-import "./hr.css";
-import "./label.css";
-import "./lists.css";
-import "./p.css";
-import "./select.css";
-import "./table.css";
-import "./typography.css";
+import "./elements/a.css";
+import "./elements/button.css";
+import "./elements/code.css";
+import "./elements/h.css";
+import "./elements/hr.css";
+import "./elements/input.css";
+import "./elements/label.css";
+import "./elements/p.css";
+import "./elements/select.css";
+import "./elements/textarea.css";

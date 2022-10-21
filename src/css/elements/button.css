@@ -1,0 +1,30 @@
+button.ix,
+input[type="submit"].ix,
+input[type="button"].ix {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: var(--shadow-mid);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+button.ix:hover,
+input[type="submit"].ix:hover,
+input[type="button"].ix:hover {
+  background-color: var(--primary-hover);
+}
+button.ix:active,
+input[type="submit"].ix:active,
+input[type="button"].ix:active {
+  background-color: var(--primary-active);
+}
+button.ix:disabled,
+input[type="submit"].ix:disabled,
+input[type="button"].ix:disabled {
+  background-color: var(--primary-disabled);
+  cursor: not-allowed;
+}

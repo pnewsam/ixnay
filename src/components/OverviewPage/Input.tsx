@@ -1,6 +1,8 @@
 export const Input = () => (
   <>
-    <label htmlFor="sandwich-name">Sandwich name</label>
-    <input type="text" id="sandwich-name" />
+    <label className="ix" htmlFor="sandwich-name">
+      Sandwich name
+    </label>
+    <input className="ix" type="text" id="sandwich-name" />
   </>
 );

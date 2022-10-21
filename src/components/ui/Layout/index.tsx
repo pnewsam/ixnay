@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { TopNav } from "../TopNav";
-import { SideNav } from "../SideNav";
-import { Content } from "../Content";
-import { Footer } from "../Footer";
 
-const Wrapper = styled.div``;
+export const Content = styled.div`
+  grid-area: content;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: var(--content-padding);
+  width: var(--content-full-width);
+`;
 
 type Props = {
   children: React.ReactNode;
@@ -12,11 +14,10 @@ type Props = {
 
 export const Layout = ({ children }: Props) => {
   return (
-    <Wrapper>
+    <div>
       {/* <TopNav /> */}
       {/* <SideNav /> */}
       <Content>{children}</Content>
-      {/* <Footer /> */}
-    </Wrapper>
+    </div>
   );
 };

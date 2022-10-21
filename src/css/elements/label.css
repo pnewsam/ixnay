@@ -1,16 +1,16 @@
-label {
+label.ix {
   display: block;
   font-size: 1rem;
   font-weight: 700;
 }
 
-label + input[type="text"],
-label + input[list] {
+label.ix + input[type="text"],
+label.ix + input[list] {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
-label + select {
+label.ix + select {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
